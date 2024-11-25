@@ -4,11 +4,11 @@
 
 # Hangman
 
-## Implementação do jogo da Forca
+## Implementação do jogo de Gamão
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
-> Aluno: Nome do aluno  
+> Aluno: Matheus Rodrigues da Cunha e Bruno Cesar  
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
