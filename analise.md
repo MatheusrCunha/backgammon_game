@@ -8,7 +8,7 @@
 Descrever de forma geral o domínio do problema.
 
 O jogo de gamão utiliza um tabuleiro, seu objetivo é retirar todas as peças do adversário do tabuleiro.
-Para jogar é necessário dois jogadores, cada jogador vai possuir dois dados que serão lançados. 
+Para jogar é necessário que os dois jogadores efetuem o laçamento de dois dados.
 
 Possíveis requisitos funcionais e não-funcionais podem ser elencados aqui.
 
