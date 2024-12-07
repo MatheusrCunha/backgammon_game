@@ -23,6 +23,9 @@ Se os dados derem valores iguais ex(5 e 5) esse movimento é duplicado, é poss�
 ## Diagrama de Casos de Uso
 
 Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
+
+![Diagrama em branco](https://github.com/user-attachments/assets/41de3d98-998d-4c7f-9e5b-05d97777cf2e)
+
  
 ## Diagrama de Domínio do problema
 
