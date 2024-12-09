@@ -20,6 +20,7 @@ Peças no tabuleiro são refletidas.
 O jogo inicia quando quando cada jogador lança um dado, o dado do jogador que possuir maior valor inicia a partida
 Se os dados derem valores iguais ex(5 e 5) esse movimento é duplicado, é possível realizar o movimento de 5 quatro vezes
 
+
 ## Diagrama de Casos de Uso
 
 Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
