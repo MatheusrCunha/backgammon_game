@@ -4,4 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        dice.cpp \
         main.cpp
+
+HEADERS += \
+    dice.h
