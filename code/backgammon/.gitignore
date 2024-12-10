@@ -26,8 +26,8 @@ tags
 Makefile*
 *.prl
 *.app
-moc_*.cpp
-ui_*.h
+!header/*.cpp
+!header/*.h
 qrc_*.cpp
 Thumbs.db
 *.res
