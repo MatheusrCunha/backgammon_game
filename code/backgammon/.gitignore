@@ -26,8 +26,8 @@ tags
 Makefile*
 *.prl
 *.app
-!header/*.cpp
-!header/*.h
+moc_*.cpp
+ui_*.h
 qrc_*.cpp
 Thumbs.db
 *.res
@@ -71,4 +71,8 @@ CMakeLists.txt.user*
 # --------
 *.dll
 *.exe
+
+!header/
+!header/*.cpp
+!header/*.h
 
