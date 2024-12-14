@@ -5,6 +5,17 @@
 
 ## Descrição Geral do domínio do problema
 
+# 1 Caso de Uso: Jogar Gamão
+
+## 1.1 Objetivo
+
+
+
+# 2 Requisitos
+
+
+## 
+
 Descrever de forma geral o domínio do problema.
 
 O jogo de gamão utiliza um tabuleiro, seu objetivo é retirar todas as peças do adversário do tabuleiro.
