@@ -84,6 +84,9 @@ Apresentar o diagram de casos de uso, identificando as funcionalidades do sistem
 
 Elaborar um diagrama conceitual do domínio do problema.
 
+![Captura de tela de 2024-12-16 18-08-30](https://github.com/user-attachments/assets/34da637e-e94d-49d0-b9a2-98b567933926)
+
+
 
 <div align="center">
 
