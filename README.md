@@ -9,7 +9,9 @@
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
 > Aluno: Matheus Rodrigues da Cunha e Bruno Cesar
+> 
 > Curso: Engenharia Eletrônica  
+>
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
