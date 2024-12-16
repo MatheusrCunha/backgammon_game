@@ -9,7 +9,7 @@
 
 ## 1.1 Objetivo
 
-Este caso de uso descreve a lógica principal do jogo de Gamão, permitindo que dois jogadores movimentem suas peças de acordo com o resultado dos dados, com o objetivo de remover todas as suas peças do tabuleiro antes do adversário.
+Este caso de uso descreve a lógica principal do jogo de Gamão, permitindo que dois jogadores movimentem suas peças de acordo com o resultado dos dados.
 
 ## 1.2 Requisitos
 
