@@ -60,11 +60,17 @@ RF2: Realizar movimentação de peças com base nos dados rolados.
 ## 1.12 Regras de Negócio
 
   O jogador que tirar o maior valor nos dados começa o jogo
+  
   Os jogadores devem mover as suas peças em sentidos opostos, um no sentido horário e outro no sentido anti-horário.
+  
   Quando uma peça do jogador pára numa casa com apenas uma peça do adversário, esta é capturada e colocada na barra.
+  
   Caso o jogador tire números duplos, ele pode mover quatro vezes (duas jogadas para cada dado).
+  
   O jogador perde a vez se não conseguir fazer nenhum movimento válido. 
+  
   Se um jogador tiver uma peça no meio, ele deve primeiro trazê-la de volta para o tabuleiro antes de fazer outros movimentos.
+  
   A primeira pessoa que remover todas as 15 peças do tabuleiro ganha a partida.
 
 ## Diagrama de Casos de Uso
