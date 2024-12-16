@@ -1,11 +1,14 @@
 TEMPLATE = app
 CONFIG += console c++17
 CONFIG -= app_bundle
-CONFIG -= qt
 
 SOURCES += \
+        board.cpp \
         dice.cpp \
         main.cpp
 
 HEADERS += \
+    board.h \
     dice.h
+
+QT += widgets
