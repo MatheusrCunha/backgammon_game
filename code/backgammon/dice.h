@@ -1,24 +1,24 @@
 #ifndef DICE_H
 #define DICE_H
 
-#include <QObject.h>
+#include <cstdlib>
+#include <ctime>
 
+using namespace std;
 
-class Dice
+class dice
 {
+public:
+    dice(void);
+    ~dice(void);
+    int rollDice();
 
-    QObject;
+    int getDice();
+
+    void printDice();
 
 private:
-
-
-public:
-    Dice();
-    ~Dice();
-
-    int rollDice();
-    int faceValue();
-
+    int roll;
 };
 
 #endif // DICE_H

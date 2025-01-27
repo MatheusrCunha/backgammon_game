@@ -1,3 +1,3 @@
 #include "dice.h"
 
-Dice::Dice() {}
+dice::dice() {}
