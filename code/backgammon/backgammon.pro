@@ -4,9 +4,13 @@ CONFIG -= app_bundle
 
 SOURCES += \
         board.cpp \
-        main.cpp
+        gamewindow.cpp \
+        main.cpp \
+        piece.cpp
 
 HEADERS += \
-    board.h
+    board.h \
+    gamewindow.h \
+    piece.h
 
 QT += widgets
