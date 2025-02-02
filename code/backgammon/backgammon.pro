@@ -3,11 +3,14 @@ CONFIG += console c++17
 CONFIG -= app_bundle
 
 SOURCES += \
-        dice.cpp \
-        main.cpp
+        board.cpp \
+        gamewindow.cpp \
+        main.cpp \
+        piece.cpp
 
 HEADERS += \
-    dice.h \
+    board.h \
+    gamewindow.h \
     piece.h
 
 QT += widgets
