@@ -1,22 +1,20 @@
 #ifndef GAMEWINDOW_H
 #define GAMEWINDOW_H
 
-#include <QWidget>
-#include <QPainter>
+#include <QGraphicsView>
+#include <QGraphicsScene>
 #include "board.h"
 
-class GameWindow : public QWidget {  //gamewindow herda qwidget
+class GameWindow : public QGraphicsView {
     Q_OBJECT
 
 public:
-     GameWindow(QWidget *parent = nullptr);
+    GameWindow(QWidget *parent = nullptr);
     ~GameWindow();
 
-protected:
-    void paintEvent(QPaintEvent *event) override;
-
 private:
-    Board * _board;
+    QGraphicsScene *scene;
+    Board *board;
 };
 
 #endif // GAMEWINDOW_H

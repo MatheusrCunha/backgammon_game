@@ -1,30 +1,24 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <QPainter> //desenha widgets
-#include <QColor>   //Cores
-#include <QMouseEvent>
+#include <QGraphicsItem>
+#include <QPainter>
+#include <QColor>
 #include "piece.h"
 
-class Board {
-
+class Board : public QGraphicsItem {
 public:
-    Board(int width = 800, int height = 400);  // Construtor
-    ~Board();                                  // Destrutor
+    Board(int width = 800, int height = 400);
 
-    void draw(QPainter &painter);          // desenha o tabuleiro
-
-    void movePiece(int newPosx, int neyPosy);       // Mover a peça
+    QRectF boundingRect() const override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 
 private:
-    int boardWidth;                            //Largura
-    int boardHeight;                           //Altura
-    QColor boardColor;                        //cor do tabuleiro
-    Piece piece;                              //objeto piece para a classe piece
-
+    int boardWidth;
+    int boardHeight;
+    QColor boardColor;
     void drawTriangles(QPainter &painter);
     void drawBar(QPainter &painter);
 };
 
 #endif // BOARD_H
-

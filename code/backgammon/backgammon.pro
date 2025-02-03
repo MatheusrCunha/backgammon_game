@@ -5,6 +5,7 @@ CONFIG -= app_bundle
 SOURCES += \
         board.cpp \
         dice.cpp \
+        form.cpp \
         gamewindow.cpp \
         main.cpp \
         piece.cpp
@@ -12,7 +13,12 @@ SOURCES += \
 HEADERS += \
     board.h \
     dice.h \
+    form.h \
     gamewindow.h \
     piece.h
 
 QT += widgets
+
+FORMS += \
+    form.ui \
+    mainwindow.ui
