@@ -14,10 +14,7 @@ public:
 
     void draw(QPainter &painter) const; // Desenha a peça
 
-    int getX() const { return x; }    // Retorna coordenada X
-    int getY() const { return y; }    // Retorna coordenada Y
-
-    bool isClicked(int mouseX, int mouseY) const; // Verifica se foi clicado
+    int getRadius() { return radius; }
 
 private:
     int x, y;

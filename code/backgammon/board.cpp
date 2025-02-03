@@ -7,9 +7,9 @@ Board::Board(int width, int height)
 Board::~Board() {}
 
 void Board::draw(QPainter &painter) {
-    // Desenha o fundo do tabuleiro
+    // Desenha tabuleiro
     painter.setBrush(boardColor);
-    painter.drawRect(0, 0, boardWidth, boardHeight);
+    painter.drawRect(5, 3, boardWidth, boardHeight);
 
     // Desenha a barra central
     drawBar(painter);
@@ -19,7 +19,8 @@ void Board::draw(QPainter &painter) {
              << QPoint(boardWidth / 4 - 30, boardHeight / 2)  // Base esquerda
              << QPoint(boardWidth / 4 + 30, boardHeight / 2); // Base direita
 
-    painter.setBrush(Qt::blue);  // Define a cor do triângulo
+
+    painter.setBrush(Qt::red);  // Define a cor do triângulo
     painter.drawPolygon(triangle);
     piece.draw(painter);
 }

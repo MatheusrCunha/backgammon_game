@@ -5,17 +5,18 @@
 #include <QPainter>
 #include "board.h"
 
-class GameWindow : public QWidget {
+class GameWindow : public QWidget {  //gamewindow herda qwidget
     Q_OBJECT
 
 public:
-    explicit GameWindow(QWidget *parent = nullptr);
+     GameWindow(QWidget *parent = nullptr);
+    ~GameWindow();
 
 protected:
     void paintEvent(QPaintEvent *event) override;
 
 private:
-    Board board;
+    Board * _board;
 };
 
 #endif // GAMEWINDOW_H

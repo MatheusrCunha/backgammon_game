@@ -12,16 +12,18 @@ public:
     Board(int width = 800, int height = 400);  // Construtor
     ~Board();                                  // Destrutor
 
-    void draw(QPainter &painter);              // desenha o tabuleiro, painter é passado como referência
+    void draw(QPainter &painter);          // desenha o tabuleiro
+
+    void movePiece(int newPosx, int neyPosy);       // Mover a peça
 
 private:
-    int boardWidth;                            // Largura
-    int boardHeight;                           // Altura
-    QColor boardColor;                        // cor do tabuleiro
-    Piece piece;
+    int boardWidth;                            //Largura
+    int boardHeight;                           //Altura
+    QColor boardColor;                        //cor do tabuleiro
+    Piece piece;                              //objeto piece para a classe piece
 
-    void drawTriangles(QPainter &painter); //desenha tabuleiro
-    void drawBar(QPainter &painter);  // desenha barra
+    void drawTriangles(QPainter &painter);
+    void drawBar(QPainter &painter);
 };
 
 #endif // BOARD_H
