@@ -13,12 +13,18 @@ public:
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 
+    // Métodos para seleção e movimento de peças
+    void setSelectedPiece(Piece *piece);  // Define a peça selecionada
+    void moveSelectedPiece(int x, int y); // Move a peça selecionada para (x, y)
+
 private:
     int boardWidth;
     int boardHeight;
     QColor boardColor;
     void drawTriangles(QPainter &painter);
     void drawBar(QPainter &painter);
+
+    Piece *selectedPiece = nullptr; // Ponteiro para a peça selecionada
 };
 
 #endif // BOARD_H

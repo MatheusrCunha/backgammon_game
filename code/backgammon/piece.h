@@ -1,19 +1,22 @@
 #ifndef PIECE_H
 #define PIECE_H
 
-#include <QGraphicsEllipseItem>
+#include <QGraphicsItem>
+#include <QPainter>
 #include <QColor>
 
-class Piece : public QGraphicsEllipseItem {
+class Piece : public QGraphicsItem {
 public:
-    Piece(int _x, int _y, QColor _color, QGraphicsItem *parent = nullptr);
+    Piece(int x, int y, QColor color);
 
-    void setColor(QColor color);  // Define a cor da peça
-    void setCount(int count);     // Define quantas peças estão empilhadas
+    void setPosition(int x, int y);  // Define a posição da peça
+
+    QRectF boundingRect() const override;  // Define a área de desenho
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override; // Desenha a peça
 
 private:
-    QColor pieceCor;
-    int _count;
+    QColor color;      // Cor da peça (branco ou preto)
+    int radius = 20; // Raio da peça
 };
 
 #endif // PIECE_H

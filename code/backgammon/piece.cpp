@@ -1,17 +1,19 @@
 #include "piece.h"
-#include <QBrush>
 
-Piece::Piece(int x, int y, QColor color, QGraphicsItem *parent)
-    : QGraphicsEllipseItem(0, 0, 40, 40, parent), pieceCor(color), _count(1) {
-    setBrush(QBrush(pieceCor)); // Define a cor inicial da peça
-    setPos(x, y); // Define a posição inicial
+Piece::Piece(int x, int y, QColor color)
+    : color(color) {
+    setPos(x, y);  //  Define a posição inicial diretamente no `QGraphicsItem`
 }
 
-void Piece::setColor(QColor color) {
-    pieceCor = color;
-    setBrush(QBrush(pieceCor));
+void Piece::setPosition(int x, int y) {
+    setPos(x, y);  // Atualiza a posição da peça
 }
 
-void Piece::setCount(int count) {
-    this->_count = count;
+QRectF Piece::boundingRect() const {
+    return QRectF(-radius, -radius, 2 * radius, 2 * radius);
+}
+
+void Piece::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *) {
+    painter->setBrush(color);
+    painter->drawEllipse(QPointF(0, 0), radius, radius);  // Desenha no centro do item
 }

@@ -7,12 +7,14 @@ SOURCES += \
         dice.cpp \
         gamewindow.cpp \
         main.cpp \
-        piece.cpp
+        piece.cpp \
+        player.cpp
 
 HEADERS += \
     board.h \
     dice.h \
     gamewindow.h \
-    piece.h
+    piece.h \
+    player.h
 
 QT += widgets
