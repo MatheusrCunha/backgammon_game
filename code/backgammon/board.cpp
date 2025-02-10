@@ -54,14 +54,4 @@ void Board::drawTriangles(QPainter &painter) {
     }
 }
 
-void Board::setSelectedPiece(Piece *piece) {
-    selectedPiece = piece;
-}
-
-void Board::moveSelectedPiece(int x, int y) {
-    if (selectedPiece) {
-        selectedPiece->setPosition(x, y);
-    }
-}
-
 
