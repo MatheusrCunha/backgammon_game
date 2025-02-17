@@ -4,7 +4,7 @@
 #include <QGraphicsItem>
 #include <QPainter>
 #include <QColor>
-#include "piece.h"
+#include <QGraphicsScene>
 
 class Board : public QGraphicsItem {
 public:
@@ -12,15 +12,13 @@ public:
 
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
-
+    void addPieces(); // Adiciona as peças ao tabuleiro
 private:
     int boardWidth;
     int boardHeight;
     QColor boardColor;
     void drawTriangles(QPainter &painter);
     void drawBar(QPainter &painter);
-
-    Piece *selectedPiece = nullptr; // Ponteiro para a peça selecionada
 };
 
 #endif // BOARD_H

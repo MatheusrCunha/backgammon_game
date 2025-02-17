@@ -1,4 +1,5 @@
 #include "board.h"
+#include <QGraphicsScene>
 
 Board::Board(int width, int height)
     : boardWidth(width), boardHeight(height), boardColor(Qt::lightGray) {}
@@ -78,6 +79,7 @@ void Board::drawTriangles(QPainter &painter) {
         painter.drawPolygon(triangle);
     }
 }
+
 
 
 

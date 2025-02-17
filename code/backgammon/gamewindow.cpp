@@ -1,6 +1,11 @@
 #include "gamewindow.h"
 #include "piece.h"
 #include <QGraphicsSceneMouseEvent>
+#include <QMouseEvent> // Adicione esta linha
+#include "dice.h"
+#include <iostream>
+
+using namespace std;
 
 GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     setWindowTitle("Tabuleiro de Gamão");
@@ -20,6 +25,10 @@ GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     piece->setFlag(QGraphicsItem::ItemIsMovable);  // Tornar a peça movível
     piece->setFlag(QGraphicsItem::ItemSendsGeometryChanges);  // Para notificar quando a posição mudar
 
+    Dice d1, d2;
+    int roll1 = d1.rollDice();
+    int roll2 = d2.rollDice();
+    std::cout << "Dados rolados: " << roll1 << " e " << roll2 << std::endl;
 
 }
 
