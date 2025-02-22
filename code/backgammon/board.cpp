@@ -82,4 +82,3 @@ void Board::drawTriangles(QPainter &painter) {
 
 
 
-
