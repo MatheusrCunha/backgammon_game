@@ -1,6 +1,9 @@
 #include "gamewindow.h"
 #include "piece.h"
 #include <QGraphicsSceneMouseEvent>
+#include <QMouseEvent> // Adicione esta linha
+
+using namespace std;
 
 GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     setWindowTitle("Tabuleiro de Gamão");
@@ -9,7 +12,7 @@ GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     setScene(scene);
 
     // Criar o tabuleiro e adicionar à cena
-    board = new Board(800, 400);
+    board = new Board(1200, 600);
     scene->addItem(board);
 
     // Criar a peça e adicionar à cena
@@ -19,7 +22,6 @@ GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     // Habilitar a seleção de itens na cena
     piece->setFlag(QGraphicsItem::ItemIsMovable);  // Tornar a peça movível
     piece->setFlag(QGraphicsItem::ItemSendsGeometryChanges);  // Para notificar quando a posição mudar
-
 
 }
 
@@ -37,4 +39,7 @@ void GameWindow::mousePressEvent(QMouseEvent *event) {
 void GameWindow::mouseMoveEvent(QMouseEvent *event) {
     QGraphicsView::mouseMoveEvent(event);
 
+}
+void GameWindow::mouseReleaseEvent(QMouseEvent *event) {
+    QGraphicsView::mouseReleaseEvent(event);
 }
