@@ -86,6 +86,33 @@ Elaborar um diagrama conceitual do domínio do problema.
 
 ![Captura de tela de 2024-12-16 18-08-30](https://github.com/user-attachments/assets/34da637e-e94d-49d0-b9a2-98b567933926)
 
+Diagrama de Sequência
+
+Clique na peça:
+
+1 - O Usuário clica na peça.
+
+2 - O GameWindow recebe o evento de clique (mousePressEvent()) e verifica se uma peça foi selecionada.
+
+3 -  A peça selecionada é armazenada em um estado interno no GameWindow.
+
+Arrasta a peça:
+
+1 - O Usuário arrasta a peça pela interface.
+
+2 - O GameWindow lida com o evento mouseMoveEvent(), atualizando a posição da peça enquanto ela é movida.
+
+3 - A Piece recebe a nova posição, sendo atualizada no tabuleiro.
+
+Solta a peça:
+
+1 - O Usuário solta a peça.
+
+2 - O GameWindow trata o evento mouseReleaseEvent(), posicionando a peça na nova posição.
+
+3 - A nova posição da peça é registrada e a peça se move no tabuleiro.
+
+![diagrama de sequência](https://github.com/user-attachments/assets/4ab94fce-2754-41cd-95ac-cf11dfae96bf)
 
 
 <div align="center">
