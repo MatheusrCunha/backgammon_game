@@ -80,11 +80,12 @@ Apresentar o diagram de casos de uso, identificando as funcionalidades do sistem
 ![Diagrama em branco](https://github.com/user-attachments/assets/41de3d98-998d-4c7f-9e5b-05d97777cf2e)
 
  
-## Diagrama de Domínio do problema
+## Diagrama de Classe
 
-Elaborar um diagrama conceitual do domínio do problema.
+Elaborar um diagrama de Classe
 
-![image](https://github.com/user-attachments/assets/5826d6f1-3c3d-4d7a-b4c3-c6b5d3450e00)
+![image](https://github.com/user-attachments/assets/81988482-bb0b-4df8-acc8-44ee11c10503)
+
 
 Diagrama de Sequência
 
