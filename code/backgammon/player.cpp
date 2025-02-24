@@ -1,6 +1,6 @@
 #include "player.h"
 
-Player::Player() : selectedPiece(nullptr) {}
+Player::Player() : selectedPiece(nullptr) {} //indica que nenhuma peça está selecionada inicialmente.
 
 void Player::setSelectedPiece(Piece *piece) {
     selectedPiece = piece;

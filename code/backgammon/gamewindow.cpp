@@ -1,5 +1,4 @@
 #include "gamewindow.h"
-#include "piece.h"
 #include <QGraphicsSceneMouseEvent>
 #include <QMouseEvent> // Adicione esta linha
 
@@ -11,15 +10,15 @@ GameWindow::GameWindow(QWidget *parent) : QGraphicsView(parent) {
     scene = new QGraphicsScene(this);
     setScene(scene);
 
-    // Criar o tabuleiro e adicionar à cena
-    board = new Board(1200, 600);
+    board = new Board(1200, 600); // Criar o tabuleiro e adicionar à cena
     scene->addItem(board);
 
-    // Criar a peça e adicionar à cena
     piece = new Piece(100, 100, Qt::white);  // Posição inicial da peça
     scene->addItem(piece);
 
-    // Habilitar a seleção de itens na cena
+    //Define que o item pode ser movido com o mouse dentro da cena (QGraphicsScene).
+    //Faz com que o próprio Qt trate automaticamente o movimento do item quando o usuário clica e arrasta.
+
     piece->setFlag(QGraphicsItem::ItemIsMovable);  // Tornar a peça movível
     piece->setFlag(QGraphicsItem::ItemSendsGeometryChanges);  // Para notificar quando a posição mudar
 
@@ -29,8 +28,7 @@ GameWindow::~GameWindow() {
     delete scene;
 }
 
-// Lidar com o clique do mouse para selecionar a peça
-void GameWindow::mousePressEvent(QMouseEvent *event) {
+void GameWindow::mousePressEvent(QMouseEvent *event) {  //clique do mouse para selecionar a peça
     QGraphicsView::mousePressEvent(event);
 
 }

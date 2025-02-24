@@ -17,12 +17,12 @@ int Dice::rollDice() {
 }
 
 // Retorna o último valor rolado
-int Dice::getDice() const {
+int Dice::getDice(){
     return roll;
 }
 
 // Exibe o valor do dado
-void Dice::printDice() const {
+void Dice::printDice(){
     if (roll > 0) {
         cout << "O dado rolou: " << roll << endl;
     } else {
